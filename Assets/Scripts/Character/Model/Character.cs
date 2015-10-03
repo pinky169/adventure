@@ -1,16 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Front class for all interactions in game
 public class Character : MonoBehaviour 
 {
+	public string name;
 	public Health health;
 	public Alliance alliance;
 	public Movement movement;
-	public CharacterStateAnimator state;
+	public CharacterState state;
 	
 	void Start () 
 	{
-		state.SetAnimator (GetComponent<Animator> ());
 		movement.SetRigidbody (GetComponent<Rigidbody> ());
 	}
 
@@ -30,8 +31,16 @@ public class Character : MonoBehaviour
 	{
 		// TODO
 	}
-	
+
+	// DO WE NEED THIS ?
 	public void Suffer ()
+	{
+		// TODO
+	}
+
+	// Push button, lift chest etc..
+	// Can be characte specific
+	public void Activate ()
 	{
 		// TODO
 	}

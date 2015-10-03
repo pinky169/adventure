@@ -2,8 +2,8 @@
 using UnityEditor;
 using System.Collections;
 
-[CustomPropertyDrawer (typeof (CharacterStateAnimator))]
-public class CharacterStateAnimatorDrawer : PropertyDrawer 
+[CustomPropertyDrawer (typeof (CharacterState))]
+public class CharacterStateDrawer : PropertyDrawer 
 {
 	// Draw the property inside the given rect
 	public override void OnGUI (Rect position, SerializedProperty property, GUIContent label) {
